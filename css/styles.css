@@ -78,13 +78,18 @@ p {
 }
 /* ЛОГОТИП */
 .logo {
-  color: #000000;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+.header .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: #000000;
 }
 .accent {
   color: var(--accent-color);
@@ -283,6 +288,7 @@ p {
   padding-bottom: 30px;
 }
 .specialist-name {
+  margin-bottom: 10px;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -291,7 +297,6 @@ p {
   letter-spacing: 0.03em;
 }
 .specialist-position {
-  margin-top: 10px;
   margin-bottom: 16px;
 
   font-size: 16px;
@@ -397,7 +402,7 @@ p {
 .footer-socials-container {
   margin-left: 70px;
 }
-.socials-title {
+.socials-text {
   margin-bottom: 20px;
 
   color: #ffffff;
@@ -412,7 +417,8 @@ p {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer .socials-link:hover {
+.footer .socials-link:hover,
+.footer .socials-link:focus {
   background-color: var(--accent-color);
 }
 /* СЕКЦИЯ "ПОРТФОЛИО" */
@@ -436,6 +442,7 @@ p {
   line-height: 1.63;
   letter-spacing: 0.03em;
 }
+.filter-btn.current,
 .filter-btn:hover,
 .filter-btn:focus {
   color: #ffffff;
